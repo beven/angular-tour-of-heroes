@@ -4,7 +4,7 @@ import {Hero} from './hero';
 import {HeroService} from './hero.service';
 
 @Component({
-  selector: 'my-app',
+  selector: 'my-heroes',
   styles: [`
   .selected {
     background-color: #CFD8DC !important;
@@ -66,7 +66,7 @@ import {HeroService} from './hero.service';
   `,
   providers: [HeroService]
 })
-export class AppComponent implements OnInit{
+export class HeroesComponent implements OnInit{
   // properties of AppComponent
   title = 'Tour of Heroes';
   selectedHero: Hero;
